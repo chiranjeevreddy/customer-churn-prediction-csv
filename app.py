@@ -56,7 +56,6 @@ def transform_view():
     # load the model from disk
     loaded_model = pickle.load(open("rf_model_csv.sav", 'rb'))
     df['prediction'] = loaded_model.predict(df.tail(1))
-    df['probablity'] = loaded_model.predict_proba(df.tail(1))
 
     
 
