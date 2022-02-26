@@ -1,0 +1,192 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+   <body>
+      <title>Customer Churn Prediction</title>
+	  <div class="container">
+		<div class="row">
+
+		  <form action="http://localhost:5000/" method="POST">
+		  	<div class="col-sm-9">
+			 <div class="form-group  purple-border">
+				  <label for="comment">arpu_8:</label>
+				  <textarea class="form-control" rows="2" id="arpu_8" name="arpu_8" rows="2" cols="5" autofocus>{{arpu_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">onnet_mou_8:</label>
+				  <textarea class="form-control" rows="2" id="onnet_mou_8" name="onnet_mou_8" rows="2" cols="5" autofocus>{{onnet_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">offnet_mou_8:</label>
+				  <textarea class="form-control" rows="2" id="offnet_mou_8" name="offnet_mou_8" rows="2" cols="5" autofocus>{{offnet_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">roam_ic_mou_8:</label>
+				  <textarea class="form-control" rows="2" id="roam_ic_mou_8" name="roam_ic_mou_8" rows="2" cols="5" autofocus>{{roam_ic_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">roam_og_mou_8:</label>
+				  <textarea class="form-control" rows="2" id="roam_og_mou_8" name="roam_og_mou_8" rows="2" cols="5" autofocus>{{roam_og_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">loc_og_t2t_mou_8:</label>
+				  <textarea class="form-control" rows="2" id="loc_og_t2t_mou_8" name="loc_og_t2t_mou_8" rows="2" cols="5" autofocus>{{loc_og_t2t_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">loc_og_t2m_mou_8:</label>
+				  <textarea class="form-control" rows="2" id="loc_og_t2m_mou_8" name="loc_og_t2m_mou_8" rows="2" cols="5" autofocus>{{loc_og_t2m_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">loc_og_t2f_mou_8:</label>
+				<textarea class="form-control" rows="2" id="loc_og_t2f_mou_8" name="loc_og_t2f_mou_8" rows="2" cols="5" autofocus>{{loc_og_t2f_mou_8}}</textarea>
+		   </div>
+		   <div class="form-group  purple-border">
+			<label for="comment">loc_og_t2c_mou_8:</label>
+			<textarea class="form-control" rows="2" id="loc_og_t2c_mou_8" name="loc_og_t2c_mou_8" rows="2" cols="5" autofocus>{{loc_og_t2c_mou_8}}</textarea>
+	       </div>
+		   <div class="form-group  purple-border">
+			<label for="comment">std_og_t2m_mou_8:</label>
+			<textarea class="form-control" rows="2" id="std_og_t2m_mou_8" name="std_og_t2m_mou_8" rows="2" cols="5" autofocus>{{std_og_t2m_mou_8}}</textarea>
+	       </div>
+		   <div class="form-group  purple-border">
+			<label for="comment">std_og_t2f_mou_8:</label>
+			<textarea class="form-control" rows="2" id="std_og_t2f_mou_8" name="std_og_t2f_mou_8" rows="2" cols="5" autofocus>{{std_og_t2f_mou_8}}</textarea>
+	       </div>
+		   <div class="form-group  purple-border">
+			<label for="comment">std_og_mou_8:</label>
+			<textarea class="form-control" rows="2" id="std_og_mou_8" name="std_og_mou_8" rows="2" cols="5" autofocus>{{std_og_mou_8}}</textarea>
+	       </div>
+		   <div class="form-group  purple-border">
+			<label for="comment">isd_og_mou_8:</label>
+			<textarea class="form-control" rows="2" id="isd_og_mou_8" name="isd_og_mou_8" rows="2" cols="5" autofocus>{{isd_og_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+			<label for="comment">spl_og_mou_8:</label>
+			<textarea class="form-control" rows="2" id="spl_og_mou_8" name="spl_og_mou_8" rows="2" cols="5" autofocus>{{spl_og_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+			<label for="comment">og_others_8:</label>
+			<textarea class="form-control" rows="2" id="og_others_8" name="og_others_8" rows="2" cols="5" autofocus>{{og_others_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">total_og_mou_8:</label>
+				<textarea class="form-control" rows="2" id="total_og_mou_8" name="total_og_mou_8" rows="2" cols="5" autofocus>{{total_og_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">loc_ic_t2t_mou_8:</label>
+				<textarea class="form-control" rows="2" id="loc_ic_t2t_mou_8" name="loc_ic_t2t_mou_8" rows="2" cols="5" autofocus>{{loc_ic_t2t_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">loc_ic_t2m_mou_8:</label>
+				<textarea class="form-control" rows="2" id="loc_ic_t2m_mou_8" name="loc_ic_t2m_mou_8" rows="2" cols="5" autofocus>{{loc_ic_t2m_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">loc_ic_t2f_mou_8:</label>
+				<textarea class="form-control" rows="2" id="loc_ic_t2f_mou_8" name="loc_ic_t2f_mou_8" rows="2" cols="5" autofocus>{{loc_ic_t2f_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">std_ic_t2t_mou_8:</label>
+				<textarea class="form-control" rows="2" id="std_ic_t2t_mou_8" name="std_ic_t2t_mou_8" rows="2" cols="5" autofocus>{{std_ic_t2t_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">std_ic_t2m_mou_8:</label>
+				<textarea class="form-control" rows="2" id="std_ic_t2m_mou_8" name="std_ic_t2m_mou_8" rows="2" cols="5" autofocus>{{std_ic_t2m_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">std_ic_t2f_mou_8:</label>
+				<textarea class="form-control" rows="2" id="std_ic_t2f_mou_8" name="std_ic_t2f_mou_8" rows="2" cols="5" autofocus>{{std_ic_t2f_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">spl_ic_mou_8:</label>
+				<textarea class="form-control" rows="2" id="spl_ic_mou_8" name="spl_ic_mou_8" rows="2" cols="5" autofocus>{{spl_ic_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">isd_ic_mou_8:</label>
+				<textarea class="form-control" rows="2" id="isd_ic_mou_8" name="isd_ic_mou_8" rows="2" cols="5" autofocus>{{isd_ic_mou_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">ic_others_8:</label>
+				<textarea class="form-control" rows="2" id="ic_others_8" name="ic_others_8" rows="2" cols="5" autofocus>{{ic_others_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">total_rech_num_8:</label>
+				<textarea class="form-control" rows="2" id="total_rech_num_8" name="total_rech_num_8" rows="2" cols="5" autofocus>{{total_rech_num_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">max_rech_amt_8:</label>
+				<textarea class="form-control" rows="2" id="max_rech_amt_8" name="max_rech_amt_8" rows="2" cols="5" autofocus>{{max_rech_amt_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">last_day_rch_amt_8:</label>
+				<textarea class="form-control" rows="2" id="last_day_rch_amt_8" name="last_day_rch_amt_8" rows="2" cols="5" autofocus>{{last_day_rch_amt_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">max_rech_data_8:</label>
+				<textarea class="form-control" rows="2" id="max_rech_data_8" name="max_rech_data_8" rows="2" cols="5" autofocus>{{max_rech_data_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">total_rech_data_8:</label>
+				<textarea class="form-control" rows="2" id="total_rech_data_8" name="total_rech_data_8" rows="2" cols="5" autofocus>{{total_rech_data_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">count_rech_3g_8:</label>
+				<textarea class="form-control" rows="2" id="count_rech_3g_8" name="count_rech_3g_8" rows="2" cols="5" autofocus>{{count_rech_3g_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">av_rech_amt_data_8:</label>
+				<textarea class="form-control" rows="2" id="av_rech_amt_data_8" name="av_rech_amt_data_8" rows="2" cols="5" autofocus>{{av_rech_amt_data_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">vol_2g_mb_8:</label>
+				<textarea class="form-control" rows="2" id="vol_2g_mb_8" name="vol_2g_mb_8" rows="2" cols="5" autofocus>{{vol_2g_mb_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">vol_3g_mb_8:</label>
+				<textarea class="form-control" rows="2" id="vol_3g_mb_8" name="vol_3g_mb_8" rows="2" cols="5" autofocus>{{vol_3g_mb_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">arpu_3g_8:</label>
+				<textarea class="form-control" rows="2" id="arpu_3g_8" name="arpu_3g_8" rows="2" cols="5" autofocus>{{arpu_3g_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">night_pck_user_8:</label>
+				<textarea class="form-control" rows="2" id="night_pck_user_8" name="night_pck_user_8" rows="2" cols="5" autofocus>{{night_pck_user_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">monthly_2g_8:</label>
+				<textarea class="form-control" rows="2" id="monthly_2g_8" name="monthly_2g_8" rows="2" cols="5" autofocus>{{monthly_2g_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">fb_user_8:</label>
+				<textarea class="form-control" rows="2" id="fb_user_8" name="fb_user_8" rows="2" cols="5" autofocus>{{fb_user_8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">aon:</label>
+				<textarea class="form-control" rows="2" id="aon" name="aon" rows="2" cols="5" autofocus>{{aon}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				<label for="comment">aug_vbc_3g:</label>
+				<textarea class="form-control" rows="2" id="aug_vbc_3g" name="aug_vbc_3g" rows="2" cols="5" autofocus>{{aug_vbc_3g}}</textarea>
+			</div>
+
+
+			</div>
+			<div class="col-sm-3">
+			<button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
+			</div>
+		  </form>
+		  </div>
+		  
+		<div class="row"> 
+			<div class="col-sm-9">
+			<textarea class="form-control" rows="2" id="comment" name="query6" rows="2" cols="5" autofocus>{{output1}}</textarea>
+			<textarea class="form-control" rows="2" id="comment" name="query7" rows="2" cols="5" autofocus>{{output2}}</textarea>
+			</div>
+		</div>
+	</div>		
+   </body>
+</html>
